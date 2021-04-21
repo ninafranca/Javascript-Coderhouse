@@ -1,0 +1,15 @@
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-animation: fadein 0.7s;
+    -moz-animation: fadein 0.7s;
+    -ms-animation: fadein 0.7s;
+    -o-animation: fadein 0.7s;
+    animation: fadein 0.7s;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}

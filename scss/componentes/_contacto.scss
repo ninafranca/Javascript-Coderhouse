@@ -1,0 +1,83 @@
+// SECTION CONTACTO /
+header {
+    .cart {
+        align-self: center;
+        height: 6vh;
+        padding-right: 2rem;
+    }
+}
+
+#form {
+    background-image: url("/assets/logo-contacto.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        align-items: center;
+        margin: 2rem;
+        padding: 1.5rem 0rem;
+        box-shadow: $box-shadow2;
+        font-family: $font-primary;
+        width: 60vw;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        @media (max-width: 992px) {font-size: 1.2rem;}
+        @media (max-width: 768px) {font-size: 1rem; align-items: space-around;}
+        div {
+            padding: 0.7rem 0.7rem 0.7rem 0rem;
+            @media (max-width: 768px) {margin-left: -3rem;}
+        }
+        .section-contacto__form--nombre {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 45vw; 
+                height: 2rem; 
+                font-size: 1rem;
+                border: none;
+            }
+        }
+        .section-contacto__form--email {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 45vw; 
+                height: 2rem; 
+                font-size: 1rem;
+                border: none;
+            }
+        }
+        .section-contacto__form--consulta {
+            display: flex;
+            flex-direction: column;
+            label {
+                padding: 0rem 2.7rem 0.5rem 0rem;
+                color: white;
+            }
+            textarea {
+                width: 45vw;
+                resize: none;
+                font-size: medium;
+                border: none;
+            }
+        }
+        .section-contacto__form--borrar-enviar {
+            display: flex;
+            div {
+                margin: 0rem 2rem;
+            }
+        }
+        button {
+            font-size: 1.2rem; 
+            padding: 0rem 0.5rem;
+        }
+        #borrar {
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
