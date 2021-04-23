@@ -1,4 +1,33 @@
 // CARRITO //
+
+let btnComprar = $(".boton-comprar");
+let carrito = [];
+function agregarAcarrito(e) {
+    const productoAcarrito = productos.find(productos => productos.id === Number(e.target.value));
+    carrito.push(productoAcarrito);
+    console.log(carrito)
+    localStorage.setItem("carritoData", JSON.stringify(carrito));
+}
+
+btnComprar && btnComprar.click(agregarAcarrito)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 const botonCarrito = $(".div-contador");
 

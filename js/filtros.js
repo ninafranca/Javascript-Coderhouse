@@ -5,22 +5,22 @@ function agregarProducto(productos) {
     const productosInner = productosGrid.add(
     `
     <div class="div-productos">
-    <img src="/assets/${productos.archivo}.webp"> 
-    <div> 
-        <p class="producto-nombre">${productos.producto}</p> 
+        <img src="/assets/${productos.archivo}.webp"> 
         <div> 
-            <label for="talle">Talle</label> 
-            <select name="talle" id="talle"> 
-                <option value="36" id="36">36</option> 
-                <option value="37" id="37">37</option> 
-                <option value="38" id="38">38</option> 
-                <option value="39" id="39">39</option> 
-                <option value="40" id="40">40</option> 
-            </select> 
-        </div> 
-        <p class="producto-precio">$${productos.precio}</p> 
-        <button class="boton-comprar" id="${productos.id}">Comprar</button> 
-    </div>
+            <p id="${productos.selector}">${productos.producto}</p> 
+            <div> 
+                <label for="talle">Talle</label> 
+                <select name="talle" id="talle"> 
+                    <option value="36" id="36">36</option> 
+                    <option value="37" id="37">37</option> 
+                    <option value="38" id="38">38</option> 
+                    <option value="39" id="39">39</option> 
+                    <option value="40" id="40">40</option> 
+                </select> 
+            </div> 
+            <p class="producto-precio" id="${productos.precio}">$${productos.precio}</p> 
+            <button class="boton-comprar" value="${productos.id}">Comprar</button>
+        </div>
     </div>
     `
     );

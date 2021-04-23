@@ -7,7 +7,7 @@ function productosJSON() {
     $.getJSON('./JSON/productos.json', (respuesta, estado) => {
         if (estado === "success") {
             console.log(respuesta);
-            respuesta.productos.map(p=>productos.push(p));
+            respuesta.productos.map(p => productos.push(p));
             vaciarAgregar();
         } else {
             console.log("error");
