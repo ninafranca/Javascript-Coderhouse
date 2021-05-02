@@ -1,101 +1,5 @@
 // FILTROS PRODUCTOS //
 
-// Función para crear los nodos de productos //
-function agregarProducto(productos) {
-    const productosInner = productosGrid.add(
-    `
-    <div class="div-productos">
-        <img src="/assets/${productos.archivo}.webp"> 
-        <div> 
-            <p id="${productos.selector}">${productos.producto}</p> 
-            <div> 
-                <label for="talle">Talle</label> 
-                <select name="talle" id="talle"> 
-                    <option value="36" id="36">36</option> 
-                    <option value="37" id="37">37</option> 
-                    <option value="38" id="38">38</option> 
-                    <option value="39" id="39">39</option> 
-                    <option value="40" id="40">40</option> 
-                </select> 
-            </div> 
-            <p class="producto-precio" id="${productos.precio}">$${productos.precio}</p> 
-            <button class="boton-comprar" value="${productos.id}">Comprar</button>
-        </div>
-    </div>
-    `
-    );
-    productosGrid && productosGrid.append(productosInner);
-}
-for (let producto of productos) {
-    agregarProducto(producto)
-};
-productosJSON();
-
-/*
-let productosGrid = $("#productos-grid");
-function agregarProducto(productos) {
-    $.ajax({
-        method: "GET",
-        url: "../JSON/productos.json",
-        dataType: "json",
-        success: function() {
-            const productosInner = productosGrid.add(
-                `
-                <div class="div-productos">
-                <img src="/assets/${productos.archivo}.webp"> 
-                <div> 
-                    <p class="producto-nombre">${productos.producto}</p> 
-                    <div> 
-                        <label for="talle">Talle</label> 
-                        <select name="talle" id="talle"> 
-                            <option value="36">36</option> 
-                            <option value="37">37</option> 
-                            <option value="38">38</option> 
-                            <option value="39">39</option> 
-                            <option value="40">40</option> 
-                        </select> 
-                    </div> 
-                    <p class="producto-precio">$${productos.precio}</p> 
-                    <button class="boton-comprar">Comprar</button> 
-                </div>
-                </div>
-                `
-                );
-            productosGrid && productosGrid.append(productosInner);
-        }
-    });
-}
-
-function agregarProducto(productos) {
-    const productosInner = productosGrid.add(
-    `
-    <div class="div-productos">
-    <img src="/assets/${productos.archivo}.webp"> 
-    <div> 
-        <p class="producto-nombre">${productos.producto}</p> 
-        <div> 
-            <label for="talle">Talle</label> 
-            <select name="talle" id="talle"> 
-                <option value="36">36</option> 
-                <option value="37">37</option> 
-                <option value="38">38</option> 
-                <option value="39">39</option> 
-                <option value="40">40</option> 
-            </select> 
-        </div> 
-        <p class="producto-precio">$${productos.precio}</p> 
-        <button class="boton-comprar">Comprar</button> 
-    </div>
-    </div>
-    `
-    );
-    productosGrid && productosGrid.append(productosInner);
-}
-for (let producto of productos) {
-    agregarProducto(producto)
-};
-*/
-
 // Funcion vaciar nodo y agregar productos //
 function vaciarAgregar() {
     productosGrid.html("");
@@ -115,7 +19,6 @@ function productosFiltradosTipo(tipo) {
     }
 }
 
-
 // Filtro "todos" //
 let tipoTodos = $("#todos");
 tipoTodos && tipoTodos.change( () => {
@@ -127,18 +30,16 @@ tipoTodos && tipoTodos.change( () => {
     }
 });
 
-
 // Filtro Botas //
 let tipoBotas = $("#botas");
 function filtroBotas() {
-    if (tipoBotas.is( ":checked" )) {
+    if (tipoBotas.prop("checked", true)) {
         productosFiltradosTipo("botas");
     } else {
         vaciarAgregar();
     }
 }
 tipoBotas && tipoBotas.change(filtroBotas);
-
 
 // Filtro Sandalias //
 let tipoSandalias = $("#sandalias");
@@ -151,7 +52,6 @@ function filtroSandalias() {
 }
 tipoSandalias && tipoSandalias.change(filtroSandalias);
 
-
 // Filtro Borcegos //
 let tipoBorcegos = $("#borcegos");
 function filtroBorcegos() {
@@ -162,7 +62,6 @@ function filtroBorcegos() {
     }
 }
 tipoBorcegos && tipoBorcegos.change(filtroBorcegos);
-
 
 // Filtro Zapatos //
 let tipoZapatos = $("#zapatos");
@@ -175,7 +74,6 @@ function filtroZapatos() {
 }
 tipoZapatos && tipoZapatos.change(filtroZapatos);
 
-
 // Filtro Mocasines //
 let tipoMocasines = $("#mocasines");
 function filtroMocasines() {
@@ -186,7 +84,6 @@ function filtroMocasines() {
     }
 }
 tipoMocasines && tipoMocasines.change(filtroMocasines);
-
 
 // Funcion para usar en el filtraje por color //
 function productosFiltradosColor(color) {
@@ -199,7 +96,6 @@ function productosFiltradosColor(color) {
     }
 }
 
-
 // Color negro a mostrar //
 let checkNegro = $("#negro");
 function checkboxNegro() {
@@ -210,7 +106,6 @@ function checkboxNegro() {
     }
 }
 checkNegro && checkNegro.change(checkboxNegro);
-
 
 // Color rojo a mostrar //
 let checkRojo = $("#rojo");
@@ -223,7 +118,6 @@ function checkboxRojo() {
 }
 checkRojo && checkRojo.change(checkboxRojo);
 
-
 // Color rosa a mostrar //
 let checkRosa = $("#rosa");
 function checkboxRosa() {
@@ -234,7 +128,6 @@ function checkboxRosa() {
     }
 }
 checkRosa && checkRosa.change(checkboxRosa);
-
 
 // Color verde a mostrar //
 let checkVerde = $("#verde");
@@ -247,7 +140,6 @@ function checkboxVerde() {
     }
 }
 checkVerde && checkVerde.change(checkboxVerde);
-
 
 // Color beige a mostrar //
 let checkBeige = $("#beige");

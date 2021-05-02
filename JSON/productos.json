@@ -1,19 +1,19 @@
 {
 "productos": [
-    {"id": 1, "producto": "Botas Arya", "selector": "Botas-Arya", "nombre": "Arya", "tipo": "botas", "color": "negro", "precio": 5600, "archivo": "bootsblack"},
-    {"id": 2, "producto": "Zapatos Sansa", "selector": "Zapatos-Sansa", "nombre": "Sansa", "tipo": "zapatos", "color": "beige", "precio": 4900, "archivo": "beigeheels"},
-    {"id": 3, "producto": "Borcegos Daenerys", "selector": "Borcegos-Daenerys", "nombre": "Daenerys", "tipo": "borcegos", "color": "negro", "precio": 6200, "archivo": "borcegoscadena"},
-    {"id": 4, "producto": "Mocasines Jaime", "selector": "Mocasines-Jaime", "nombre": "Jaime", "tipo": "mocasines", "color": "rosa", "precio": 4400, "archivo": "pinkyshoes"},
-    {"id": 5, "producto": "Botas Jon", "selector": "Botas-Jon", "nombre": "Jon", "tipo": "botas", "color": "negro", "precio": 5800, "archivo": "goldboots"},
-    {"id": 6, "producto": "Sandalias Sam", "selector": "Sandalias-Sam", "nombre": "Sam", "tipo": "sandalias", "color": "verde", "precio": 4400, "archivo": "greensandals"},
-    {"id": 7, "producto": "Botas Brienne", "selector": "Botas-Brienne", "nombre": "Brienne", "tipo": "botas", "color": "verde", "precio": 5200, "archivo": "greenboots"},
-    {"id": 8, "producto": "Sandalias Ygritte", "selector": "Sandalias-Ygritte", "nombre": "Ygritte", "tipo": "sandalias", "color": "negro", "precio": 3900, "archivo": "stripedsandal"},
-    {"id": 9, "producto": "Botas Melisandre", "selector": "Botas-Melisandre", "nombre": "Melisandre", "tipo": "botas", "color": "rojo", "precio": 5700, "archivo": "redboots"},
-    {"id": 10, "producto": "Mocasines Cersei", "selector": "Mocasines-Cersei", "nombre": "Cersei", "tipo": "mocasines", "color": "negro", "precio": 4700, "archivo": "chunkyblack"},
-    {"id": 11, "producto": "Borcegos Viserion", "selector": "Borcegos-Viserion", "nombre": "Viserion", "tipo": "borcegos", "color": "rosa", "precio": 5900, "archivo": "borcegospink"},
-    {"id": 12, "producto": "Zapatos Missandei", "nombre": "Missandei", "tipo": "zapatos", "color": "negro", "precio": 5100, "archivo": "needleheels"},
-    {"id": 13, "producto": "Zapatos Margaery", "selector": "Zapatos-Margaery", "nombre": "Margaery", "tipo": "zapatos", "color": "beige", "precio": 4700, "archivo": "beigeshoes"},
-    {"id": 14, "producto": "Sandalias Khal", "selector": "Sandalias-Khal", "nombre": "Khal", "tipo": "sandalias", "color": "negro", "precio": 4500, "archivo": "sandalsblack"},
-    {"id": 15, "producto": "Mocasines Tyrion", "selector": "Mocasines-Tyrion", "nombre": "Tyrion", "tipo": "mocasines", "color": "rojo", "precio": 4600, "archivo": "redmocasines"}
+    {"id": 0, "producto": "Botas Arya", "nombre": "Arya", "tipo": "botas", "color": "negro", "precio": 5600, "archivo": "bootsblack"},
+    {"id": 1, "producto": "Zapatos Sansa", "nombre": "Sansa", "tipo": "zapatos", "color": "beige", "precio": 4900, "archivo": "beigeheels"},
+    {"id": 2, "producto": "Borcegos Daenerys", "nombre": "Daenerys", "tipo": "borcegos", "color": "negro", "precio": 6200, "archivo": "borcegoscadena"},
+    {"id": 3, "producto": "Mocasines Jaime", "nombre": "Jaime", "tipo": "mocasines", "color": "rosa", "precio": 4400, "archivo": "pinkyshoes"},
+    {"id": 4, "producto": "Botas Jon", "nombre": "Jon", "tipo": "botas", "color": "negro", "precio": 5800, "archivo": "goldboots"},
+    {"id": 5, "producto": "Sandalias Sam", "nombre": "Sam", "tipo": "sandalias", "color": "verde", "precio": 4400, "archivo": "greensandals"},
+    {"id": 6, "producto": "Botas Brienne", "nombre": "Brienne", "tipo": "botas", "color": "verde", "precio": 5200, "archivo": "greenboots"},
+    {"id": 7, "producto": "Sandalias Ygritte", "nombre": "Ygritte", "tipo": "sandalias", "color": "negro", "precio": 3900, "archivo": "stripedsandal"},
+    {"id": 8, "producto": "Botas Melisandre", "nombre": "Melisandre", "tipo": "botas", "color": "rojo", "precio": 5700, "archivo": "redboots"},
+    {"id": 9, "producto": "Mocasines Cersei", "nombre": "Cersei", "tipo": "mocasines", "color": "negro", "precio": 4700, "archivo": "chunkyblack"},
+    {"id": 10, "producto": "Borcegos Viserion", "nombre": "Viserion", "tipo": "borcegos", "color": "rosa", "precio": 5900, "archivo": "borcegospink"},
+    {"id": 11, "producto": "Zapatos Missandei", "nombre": "Missandei", "tipo": "zapatos", "color": "negro", "precio": 5100, "archivo": "needleheels"},
+    {"id": 12, "producto": "Zapatos Margaery", "nombre": "Margaery", "tipo": "zapatos", "color": "beige", "precio": 4700, "archivo": "beigeshoes"},
+    {"id": 13, "producto": "Sandalias Khal", "nombre": "Khal", "tipo": "sandalias", "color": "negro", "precio": 4500, "archivo": "sandalsblack"},
+    {"id": 14, "producto": "Mocasines Tyrion", "nombre": "Tyrion", "tipo": "mocasines", "color": "rojo", "precio": 4600, "archivo": "redmocasines"}
 ]
 }

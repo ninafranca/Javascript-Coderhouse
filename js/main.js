@@ -1,9 +1,141 @@
 // MAIN //
 
+// Arreglar "TODOS" al DOM
+// Crear total $ suma de productos.precio
+// Crear descuento del total
+// Trabajar el boton pagar
+// Modal cuando hago click en "comprar"
+// Boton eliminar
+// Agregar comments
+// Borrar archivos.js de mas
+// Borrar contador.js
+
+// ($(`#talle${productoAcarrito.id}`).val());
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const renderCart = arrayDelCarrito => {
+    let productoEnDOM = $(".dropdown-menu")
+    productoEnDOM.html("");
+    let html = "";
+    arrayDelCarrito.forEach(productos => {
+        html += `
+            <li><p id="productos-carrito">${productos.producto} talle precio $${productos.precio}</p></li>
+            <li><p id="descuento-carrito">Descuento: - $ FUNCION</p></li>
+            <li><hr class="dropdown-divider"></li>
+            <li id="total"><p>Total: $ FUNCION</p></li>
+            <li><button class="dropdown-item" id="estilo-pagar" href="#">Pagar</butto></li>
+        </ul>
+        `;
+    });
+    productoEnDOM.html(html);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// let btnComprar = $(".boton-comprar");
+let carrito = [];
+function agregarAcarrito(e) {
+    const productoAcarrito = productos.find(productos => productos.id === Number(e.target.value));
+    carrito.push(productoAcarrito);
+    localStorage.setItem("carritoData", JSON.stringify(carrito));
+    carritoDOM(carrito);
+    renderCart(carrito);
+}
+let carritoGuardado = localStorage.getItem("carritoData");
+console.log("Carrito: ", JSON.parse(carritoGuardado));
+
+// Agrego nodo "carrito" al DOM //
+const divContador = $(".div-contador")
+function carritoDOM() {
+    let nodoCarrito = divContador.html(
+    `
+    <img src="/assets/bag.png" class="cart" data-bs-toggle="dropdown" aria-expanded="false">
+    <p id="contador-clicks" data-bs-toggle="dropdown" aria-expanded="false">0</p>
+    <ul class="dropdown-menu">
+        <li><p id="productos-carrito">Tu carrito está vacío</p></li>
+        <li style="display:none;"><hr class="dropdown-divider"></li>
+        <li style="display:none;" id="total"><p>Total:</p></li>
+        <li style="display:none;"><button class="dropdown-item" id="estilo-pagar" href="#">Pagar</butto></li>
+    </ul>
+    `
+    );
+    divContador && divContador.append(nodoCarrito);
+}
+
+
+const renderCart = arrayDelCarrito => {
+    divContador.html("");
+    let html = "";
+    arrayDelCarrito.forEach(productos => {
+        html += `
+        <img src="/assets/bag.png" class="cart" data-bs-toggle="dropdown" aria-expanded="false">
+        <p id="contador-clicks" data-bs-toggle="dropdown" aria-expanded="false">0</p>
+        <ul class="dropdown-menu">
+            <li><p id="productos-carrito">${productos.producto} talle precio $${productos.precio}</p></li>
+            <li><p id="descuento-carrito">Descuento: - $ FUNCION</p></li>
+            <li><hr class="dropdown-divider"></li>
+            <li id="total"><p>Total: $ FUNCION Total - Descuento</p></li>
+            <li><button class="dropdown-item" id="estilo-pagar" href="#">Pagar</butto></li>
+        </ul>
+        `;
+    });
+    divContador.html(html);
+}
+*/
 
 
 

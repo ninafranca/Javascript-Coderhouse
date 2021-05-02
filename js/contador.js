@@ -13,24 +13,18 @@ botonComprar.click(function () {
 })
 */
 
-// Agrego nodo "carrito" al DOM //
-const divContador = $(".div-contador")
-function carritoDOM() {
-    const nodoContador = divContador.add(
-    `
-    <img src="/assets/bag.png" class="cart" data-bs-toggle="dropdown" aria-expanded="false">
-    <p id="contador-clicks" data-bs-toggle="dropdown" aria-expanded="false">0</p>
-    <ul class="dropdown-menu">
-      <li><p id="productos-carrito">Tu carrito está vacío</p></li>
-      <li style="display:none;"><hr class="dropdown-divider"></li>
-      <li style="display:none;" id="total"><p>Total:</p></li>
-      <li style="display:none;"><button class="dropdown-item" id="estilo-pagar" href="#">Pagar</butto></li>
-    </ul>
-    `
-    );
-    divContador && divContador.append(nodoContador);
-};
-carritoDOM();
+/*function descuento(productos) {
+    let monto = productos.precio
+    alert("El monto final con el 40% off es de $" + Math.floor(monto * 0.6));
+}*/
+
+
+
+
+
+
+
+    
 
 
 

@@ -18,7 +18,7 @@ function agregarDatos(evento) {
 enviar && enviar.click(agregarDatos);
 // Obtengo el string antes guardado //
 let guardado = localStorage.getItem("localData");
-console.log("datosContacto: ", JSON.parse(guardado));
+console.log("Datos contacto: ", JSON.parse(guardado));
 
 
 
