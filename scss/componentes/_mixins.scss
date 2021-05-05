@@ -1,5 +1,12 @@
 @mixin filtros {
     width: 2vw;
     border-radius: 15px;
-    padding: 0rem 1.3rem;
+    padding: -0rem 1.2rem;
+}
+
+@mixin descuento-subtotal {
+    font-size: 1.15rem;
+    font-family: $font-primary;
+    letter-spacing: 0.1rem;
+    padding-left: 16.5rem;
 }

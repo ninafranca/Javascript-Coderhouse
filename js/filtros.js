@@ -1,6 +1,20 @@
-// FILTROS PRODUCTOS //
+// FILTROS //
 
-// Funcion vaciar nodo y agregar productos //
+// Variables //
+let tipoTodos = $("#todos");
+let tipoBotas = $("#botas");
+let tipoSandalias = $("#sandalias");
+let tipoBorcegos = $("#borcegos");
+let tipoZapatos = $("#zapatos");
+let tipoMocasines = $("#mocasines");
+let checkNegro = $("#negro");
+let checkRojo = $("#rojo");
+let checkRosa = $("#rosa");
+let checkVerde = $("#verde");
+let checkBeige = $("#beige");
+
+
+// Función vaciar nodo y agregar productos //
 function vaciarAgregar() {
     productosGrid.html("");
     for (let producto of productos) {
@@ -8,7 +22,7 @@ function vaciarAgregar() {
     }
 }
 
-// Funcion para usar en el filtraje por tipo //
+// Función para usar en el filtraje por tipo de calzado //
 function productosFiltradosTipo(tipo) { 
     let productosFiltrados = productos.filter(p => p.tipo === tipo);
     productosGrid.html("");
@@ -19,8 +33,7 @@ function productosFiltradosTipo(tipo) {
     }
 }
 
-// Filtro "todos" //
-let tipoTodos = $("#todos");
+// Filtro "todos los productos" a mostrar //
 tipoTodos && tipoTodos.change( () => {
     productosGrid.html("");
     productosGrid.hide();
@@ -30,8 +43,7 @@ tipoTodos && tipoTodos.change( () => {
     }
 });
 
-// Filtro Botas //
-let tipoBotas = $("#botas");
+// Filtro Botas a mostrar //
 function filtroBotas() {
     if (tipoBotas.prop("checked", true)) {
         productosFiltradosTipo("botas");
@@ -41,8 +53,7 @@ function filtroBotas() {
 }
 tipoBotas && tipoBotas.change(filtroBotas);
 
-// Filtro Sandalias //
-let tipoSandalias = $("#sandalias");
+// Filtro Sandalias a mostrar //
 function filtroSandalias() {
     if (tipoSandalias.prop("checked", true)) {
         productosFiltradosTipo("sandalias");
@@ -52,8 +63,7 @@ function filtroSandalias() {
 }
 tipoSandalias && tipoSandalias.change(filtroSandalias);
 
-// Filtro Borcegos //
-let tipoBorcegos = $("#borcegos");
+// Filtro Borcegos a mostrar //
 function filtroBorcegos() {
     if (tipoBorcegos.prop("checked", true)) {
         productosFiltradosTipo("borcegos");
@@ -63,8 +73,7 @@ function filtroBorcegos() {
 }
 tipoBorcegos && tipoBorcegos.change(filtroBorcegos);
 
-// Filtro Zapatos //
-let tipoZapatos = $("#zapatos");
+// Filtro Zapatos a mostrar //
 function filtroZapatos() {
     if (tipoZapatos.prop("checked", true)) {
         productosFiltradosTipo("zapatos");
@@ -74,8 +83,7 @@ function filtroZapatos() {
 }
 tipoZapatos && tipoZapatos.change(filtroZapatos);
 
-// Filtro Mocasines //
-let tipoMocasines = $("#mocasines");
+// Filtro Mocasines a mostrar //
 function filtroMocasines() {
     if (tipoMocasines.prop("checked", true)) {
         productosFiltradosTipo("mocasines");
@@ -96,8 +104,7 @@ function productosFiltradosColor(color) {
     }
 }
 
-// Color negro a mostrar //
-let checkNegro = $("#negro");
+// Filtro color negro a mostrar //
 function checkboxNegro() {
     if (checkNegro.prop("checked", true)) {
         productosFiltradosColor("negro")
@@ -107,8 +114,7 @@ function checkboxNegro() {
 }
 checkNegro && checkNegro.change(checkboxNegro);
 
-// Color rojo a mostrar //
-let checkRojo = $("#rojo");
+// Filtro color rojo a mostrar //
 function checkboxRojo() {
     if (checkRojo.prop("checked", true)) {
         productosFiltradosColor("rojo")
@@ -118,8 +124,7 @@ function checkboxRojo() {
 }
 checkRojo && checkRojo.change(checkboxRojo);
 
-// Color rosa a mostrar //
-let checkRosa = $("#rosa");
+// Filtro color rosa a mostrar //
 function checkboxRosa() {
     if (checkRosa.prop("checked", true)) {
         productosFiltradosColor("rosa")
@@ -129,8 +134,7 @@ function checkboxRosa() {
 }
 checkRosa && checkRosa.change(checkboxRosa);
 
-// Color verde a mostrar //
-let checkVerde = $("#verde");
+// Filtro color verde a mostrar //
 function checkboxVerde() {
     if (checkVerde.prop("checked", true)) {
         productosFiltradosColor("verde");
@@ -141,8 +145,7 @@ function checkboxVerde() {
 }
 checkVerde && checkVerde.change(checkboxVerde);
 
-// Color beige a mostrar //
-let checkBeige = $("#beige");
+// Filtro color beige a mostrar //
 function checkboxBeige() {
     if (checkBeige.prop("checked", true)) {
         productosFiltradosColor("beige");

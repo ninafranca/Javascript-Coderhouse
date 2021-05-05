@@ -1,10 +1,10 @@
-// CONTACTO FORM //
+// CONTACTO //
 
-// Variable de elemento donde pongo el evento//
+// Variables //
 let enviar = $("#enviar");
-// Creo array vacio para agregarle los datos//
 let form = new Array();
-// Funcion para agregar los datos al local storage //
+
+// Agregar los datos del form al local storage //
 function agregarDatos(evento) {
     form.push({
         Nombre: $("#nombre").val(),
@@ -14,12 +14,7 @@ function agregarDatos(evento) {
     localStorage.setItem("localData", JSON.stringify(form));
     evento.preventDefault();
 }
-// Conecto el evento con la variable //
 enviar && enviar.click(agregarDatos);
-// Obtengo el string antes guardado //
-let guardado = localStorage.getItem("localData");
-console.log("Datos contacto: ", JSON.parse(guardado));
-
 
 
 

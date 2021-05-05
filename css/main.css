@@ -101,23 +101,63 @@ header {
     header .div-contador .dropdown-menu {
       font-family: "Josefin Sans", sans-serif;
       font-size: 1rem;
-      background-color: #f1eded;
-      width: 25rem; }
+      background-color: #ece7e7;
+      width: 29rem;
+      word-spacing: 0.1rem; }
       header .div-contador .dropdown-menu #render-producto {
         display: grid;
-        grid-template-columns: repeat(2, auto); }
+        grid-template-columns: repeat(2, auto);
+        align-items: center; }
         header .div-contador .dropdown-menu #render-producto img {
-          margin: 0rem 0.4rem 0.5rem 0rem; }
-      header .div-contador .dropdown-menu .estilo-eliminar {
-        color: #b80d0d; }
+          margin: 0rem 0rem 0.5rem -1rem; }
+        header .div-contador .dropdown-menu #render-producto .alinear-delete {
+          display: flex;
+          justify-content: space-between; }
+          header .div-contador .dropdown-menu #render-producto .alinear-delete span {
+            padding-right: 0.4rem;
+            color: #cf1818; }
+      header .div-contador .dropdown-menu #agrandar-descuento {
+        font-size: 1.5rem; }
+      header .div-contador .dropdown-menu #productos-carrito {
+        font-size: 1.1rem;
+        text-align: center; }
+      header .div-contador .dropdown-menu #descuento-carrito {
+        font-size: 1.15rem;
+        font-family: "Staatliches", cursive;
+        letter-spacing: 0.1rem;
+        padding-left: 16.5rem; }
+      header .div-contador .dropdown-menu #subtotal-carrito {
+        font-size: 1.15rem;
+        font-family: "Staatliches", cursive;
+        letter-spacing: 0.1rem;
+        padding-left: 16.5rem; }
+      header .div-contador .dropdown-menu #total {
+        font-family: "Staatliches", cursive;
+        font-size: 1.4rem;
+        padding-left: 16.6rem;
+        letter-spacing: 0.1rem; }
       header .div-contador .dropdown-menu #estilo-pagar {
         font-weight: 800;
-        font-size: 1.1rem;
-        color: #b912e2;
-        cursor: pointer; }
+        font-size: 1rem;
+        color: #ff0dba;
+        cursor: pointer;
+        text-align: end;
+        padding-right: 8rem;
+        font-size: 1.3rem; }
         header .div-contador .dropdown-menu #estilo-pagar:hover {
-          background-color: #dddada;
-          color: #6b277c; }
+          background-color: #ece7e7;
+          color: #d53ffa; }
+    header .div-contador .modal .modal-body {
+      font-size: 1.5rem; }
+    header .div-contador .modal .btn-secondary {
+      background-color: #ff0dba;
+      border-color: #ff0dba; }
+      header .div-contador .modal .btn-secondary:hover {
+        background-color: #fafa00;
+        border-color: #fafa00;
+        color: black; }
+    header .div-contador .modal #logo-modal {
+      height: 6rem; }
     header .div-contador .cart {
       position: absolute;
       z-index: 1;
@@ -215,31 +255,31 @@ header {
       background-color: black;
       width: 2vw;
       border-radius: 15px;
-      padding: 0rem 1.3rem; }
+      padding: -0rem 1.2rem; }
     .asideYproductos aside .filtro-beige {
       background-color: #c0a076;
       color: #c0a076;
       width: 2vw;
       border-radius: 15px;
-      padding: 0rem 1.3rem; }
+      padding: -0rem 1.2rem; }
     .asideYproductos aside .filtro-rosa {
       background-color: #d38ec5;
       color: #d38ec5;
       width: 2vw;
       border-radius: 15px;
-      padding: 0rem 1.3rem; }
+      padding: -0rem 1.2rem; }
     .asideYproductos aside .filtro-verde {
       background-color: #324827;
       color: #324827;
       width: 2vw;
       border-radius: 15px;
-      padding: 0rem 1.3rem; }
+      padding: -0rem 1.2rem; }
     .asideYproductos aside .filtro-rojo {
       background-color: red;
       color: red;
       width: 2vw;
       border-radius: 15px;
-      padding: 0rem 1.3rem; }
+      padding: -0rem 1.2rem; }
   .asideYproductos .productos {
     display: flex;
     align-items: center;
@@ -262,7 +302,7 @@ header {
             height: 35vh; } }
         @media screen and (max-width: 1400px) {
           .asideYproductos .productos #productos-grid img {
-            height: 75vh; } }
+            height: 73vh; } }
         @media screen and (min-width: 1400px) {
           .asideYproductos .productos #productos-grid img {
             height: 63vh; } }

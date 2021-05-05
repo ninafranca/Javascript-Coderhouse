@@ -38,27 +38,73 @@ header {
         .dropdown-menu {
             font-family: $font-secondary;
             font-size: 1rem;
-            background-color: rgb(241, 237, 237);
-            width: 25rem;
+            background-color: $color7;
+            width: 29rem;
+            word-spacing: 0.1rem;
             #render-producto {
                 display: grid;
                 grid-template-columns: repeat(2, auto);
+                align-items: center;
                 img {
-                    margin: 0rem 0.4rem 0.5rem 0rem;
+                    margin: 0rem 0rem 0.5rem -1rem;
+                }
+                .alinear-delete {
+                    display: flex;
+                    justify-content: space-between;
+                    span {
+                        padding-right: 0.4rem;
+                        color: rgb(207, 24, 24);
+                    }
                 }
             }
-            .estilo-eliminar {
-                color: rgb(184, 13, 13);
+            #agrandar-descuento {
+                font-size: 1.5rem;
+            }
+            #productos-carrito {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            #descuento-carrito {
+                @include descuento-subtotal;
+            }
+            #subtotal-carrito {
+                @include descuento-subtotal;
+            }
+            #total {
+                font-family: $font-primary;
+                font-size: 1.4rem;
+                padding-left: 16.6rem;
+                letter-spacing: 0.1rem;
             }
             #estilo-pagar {
                 font-weight: 800;
-                font-size: 1.1rem;
-                color: rgb(185, 18, 226);
+                font-size: 1rem;
+                color: $color2;
                 cursor: pointer;
+                text-align: end;
+                padding-right: 8rem;
+                font-size: 1.3rem;
                 &:hover {
-                    background-color: rgb(221, 218, 218);
-                    color:rgb(107, 39, 124)
+                    background-color: $color7;
+                    color: $color1;
                 }
+            }
+        }
+        .modal {
+            .modal-body {
+                font-size: 1.5rem;
+            }
+            .btn-secondary {
+                background-color: $color2;
+                border-color: $color2;
+                &:hover {
+                    background-color: $color4;
+                    border-color: $color4;
+                    color: black;
+                }
+            }
+            #logo-modal {
+                height: 6rem;
             }
         }
         .cart {
@@ -216,7 +262,7 @@ header {
                     height: 35vh;
                 }
                 @media screen and (max-width: 1400px) {
-                    height: 75vh;
+                    height: 73vh;
                 }
                 @media screen and (min-width: 1400px) {
                     height: 63vh;
