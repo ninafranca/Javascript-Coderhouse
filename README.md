@@ -4,8 +4,8 @@ _Proyecto final del curso de JavaScript de Coderhouse_
 
 ## Construido con 🛠️
 
-* [HTML5]
-* [CSS3]
+* HTML5
+* CSS3
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
